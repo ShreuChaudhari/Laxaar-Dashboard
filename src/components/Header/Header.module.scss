@@ -1,0 +1,140 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 10px 20px;
+  overflow: hidden;
+  position: sticky;
+  height: 92px;
+  gap: 0px;
+  opacity: 0px;
+  top: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  z-index: 1;
+}
+
+
+
+.title {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.titleText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.arivaa {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+
+}
+
+.service {
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  position: absolute;
+  left: 60%;
+  transform: translateX(-50%);
+  bottom: -20px;
+}
+
+.jobs {
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  position: absolute;
+  left: 125%;
+  transform: translateX(-50%);
+  bottom: -20px;
+}
+
+.menu {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.rightContainer {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  margin-right: 20px;
+}
+
+.button {
+  margin-left: 15px;
+}
+
+
+.userProfile {
+  position: relative;
+  display: inline-block;
+}
+
+.userImage {
+  border-color: red;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.userInfoText {
+  margin-left: 10px;
+}
+
+.userInfoText p {
+  margin: 0;
+}
+
+/* New style for user box inside dropdown */
+.userBox {
+  display: flex;
+  align-items: center;
+}
+
+.userBox img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Style for the signout button */
+.ant-menu-item.ant-menu-item-selected .ant-btn {
+  background-color: orange;
+  border-color: orange;
+}
+
+.ant-menu-item.ant-menu-item-selected .ant-btn:hover,
+.ant-menu-item.ant-menu-item-selected .ant-btn:focus {
+  background-color: orange;
+  border-color: orange;
+}
+
+.ant-menu-item.ant-menu-item-selected .ant-btn span {
+  color: white;
+}

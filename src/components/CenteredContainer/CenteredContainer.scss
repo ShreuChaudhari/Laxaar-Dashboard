@@ -1,0 +1,60 @@
+/* CenteredContainer.scss */
+.ant-table-thead > tr > th {
+  height: 100px;
+  padding: 16px 8px;
+  font-size: 14px;
+  text-align: center; /* Corrected to center */
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 16.41px;
+}
+
+.dashboard {
+  position: relative;
+  width: 100%;
+  min-height: calc(100vh - 100px); /* Adjusted for full viewport height minus 100px */
+  background-color: #ffffff;
+}
+
+.icon-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.icon-container:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%; /* Position the tooltip above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #FA541C; /* Box color orange */
+  color: white; /* Text color white */
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.icon-container:hover::before {
+  content: '';
+  position: absolute;
+  bottom: 95%; /* Adjusted as needed to align with the tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #FA541C transparent; /* Arrow color */
+  z-index: 1;
+}
+
+.icon-container:hover .anticon {
+  color: #FA541C; /* Change icon color on hover */
+}
+
+.CenteredContainer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1156px; 
+}

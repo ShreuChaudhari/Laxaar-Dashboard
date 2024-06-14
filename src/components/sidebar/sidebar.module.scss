@@ -1,0 +1,24 @@
+.sider {
+  background: #ffffff;
+}
+
+.sidebar {
+  position: fixed; /* Change to fixed */
+  top: 80px; /* Height of the header + space */
+  left: 0;
+  width: 100px; /* Adjust width as needed */
+  background-color: #f4f4f4;
+  overflow-y: auto; /* Add vertical scroll */
+  padding-top: 0; /* Remove padding-top */
+  height: 987px; /* Adjust height to fill remaining space */
+}
+
+.scrollable-content {
+  padding-left: 20px; /* Space for scrollbar */
+}
+
+.sidebar-button {
+  display: block;
+  margin-top: 10px; /* Adjust margin as needed */
+  text-align: right; /* Align button to the right */
+}

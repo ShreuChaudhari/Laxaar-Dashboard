@@ -1,0 +1,44 @@
+@import "antd/dist/reset.css"; // Import Ant Design styles
+
+.App {
+  text-align: center;
+  background-color: #ffffff; // Match the background color from Figma
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto';  
+  background-color: #ffffff;  
+}
+
+html, body, #root {
+  height: 100%;
+  margin-top: 0px;
+  padding: 0;
+
+
+}
+
+.ant-layout {
+  margin-top: 0%;
+  min-height: 100vh;
+}
+
+
+
+.ant-layout-content {
+  display: flex;
+  min-height: 100vh;
+  padding: 20px;
+  background: #ffffff;
+  padding: 24px;
+  background-image: url('./assets/images/bg.jpg');
+  background-size:1000px;
+  background-position: center;
+
+}
+
+
+
+
+
